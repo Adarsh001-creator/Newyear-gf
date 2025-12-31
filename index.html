@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FIREWORK CANVAS -->
+<canvas id="fireworks"></canvas>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <h1>🎉 Happy New Year 2026 🎉</h1>
+  <h2>My Love ❤️</h2>
+
+  <p class="text">
+    Naya saal, nayi shuruaat  
+    aur tum meri zindagi ka sabse khoobsurat hissa 💗
+  </p>
+
+  <!-- COUNTDOWN -->
+  <div id="timer">
+    <div><span id="days">00</span><small>Days</small></div>
+    <div><span id="hours">00</span><small>Hours</small></div>
+    <div><span id="minutes">00</span><small>Minutes</small></div>
+    <div><span id="seconds">00</span><small>Seconds</small></div>
+  </div>
+
+  <button onclick="nextFromHome()">Next ➜</button>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <div class="photos">
+    <img src="p1a.jpg">
+    <img src="p1b.jpg">
+  </div>
+  <p class="quote">Tumhari muskaan meri duniya hai 💞</p>
+
+  <div class="nav">
+    <button onclick="goBack(2)">⬅ Back</button>
+    <button onclick="goNext(2)">Next ➜</button>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <div class="photos">
+    <img src="p2a.jpg">
+    <img src="p2b.jpg">
+  </div>
+  <p class="quote">Har saal tumhare saath aur special ho 😘</p>
+
+  <div class="nav">
+    <button onclick="goBack(3)">⬅ Back</button>
+    <button onclick="goNext(3)">Next ➜</button>
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+  <div class="photos">
+    <img src="p3a.jpg">
+    <img src="p3b.jpg">
+  </div>
+
+  <p class="quote big">
+    Thanks for coming into my life ❤️  
+    Happy New Year my forever 💗
+  </p>
+
+  <button onclick="goBack(4)">⬅ Back</button>
+</section>
+
+<!-- AUDIO -->
+<audio id="song" src="song.mp3"></audio>
+<audio id="fireSound" src="fireworks.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

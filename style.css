@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  overflow: hidden;
+  color: white;
+}
+
+.page {
+  display: none;
+  height: 100vh;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.page.active {
+  display: block;
+}
+
+h1 { margin-top: 40px; }
+
+.text { margin: 20px 0; font-size: 18px; }
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.photos img {
+  width: 140px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.quote { font-size: 18px; margin: 15px; }
+.big { font-size: 20px; }
+
+button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #ff5f8a;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* TIMER */
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+#timer div {
+  background: rgba(255,255,255,0.25);
+  padding: 10px 14px;
+  border-radius: 12px;
+  min-width: 65px;
+}
+
+#timer span {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* FLOATING HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 6s linear forwards;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* FIREWORK CANVAS */
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
